@@ -1,0 +1,390 @@
+fileFormatVersion: 2
+guid: e645949b67e8bed4b98d73cc142d5e91
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3022264244618255427
+    second: Geometric Chairs_gdc1_0
+  - first:
+      213: 4921768934189186091
+    second: Geometric Chairs_gdc1_1
+  - first:
+      213: 7129821035628097985
+    second: Geometric Chairs_gdc1_2
+  - first:
+      213: -5146930441126715953
+    second: Geometric Chairs_gdc1_3
+  - first:
+      213: 924379025252616661
+    second: Geometric Chairs_gdc1_4
+  - first:
+      213: 7858632946613405022
+    second: Geometric Chairs_gdc1_5
+  - first:
+      213: 1025830882843486387
+    second: Geometric Chairs_gdc1_6
+  - first:
+      213: -1409072058377186794
+    second: Geometric Chairs_gdc1_7
+  - first:
+      213: 1154166677905812791
+    second: Geometric Chairs_gdc1_8
+  - first:
+      213: -1168283068394085455
+    second: Geometric Chairs_gdc1_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Geometric Chairs_gdc1_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 242
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34cd5dd515d31f920800000000000000
+      internalID: 3022264244618255427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geometric Chairs_gdc1_1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 243
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c36ecd4c2ad4440800000000000000
+      internalID: 4921768934189186091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geometric Chairs_gdc1_2
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 246
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c178bcd47632f260800000000000000
+      internalID: 7129821035628097985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geometric Chairs_gdc1_3
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 247
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd5ffc880e6298b0800000000000000
+      internalID: -5146930441126715953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geometric Chairs_gdc1_4
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 134
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9010e63dd04dc00800000000000000
+      internalID: 924379025252616661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geometric Chairs_gdc1_5
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 135
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55c21337097f0d60800000000000000
+      internalID: 7858632946613405022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geometric Chairs_gdc1_6
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 134
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b8e28bb0cb7c3e00800000000000000
+      internalID: 1025830882843486387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geometric Chairs_gdc1_7
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 161
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612df71bd68f17ce0800000000000000
+      internalID: -1409072058377186794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geometric Chairs_gdc1_8
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 135
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d2b208a7c640010800000000000000
+      internalID: 1154166677905812791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geometric Chairs_gdc1_9
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 105
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b364473dbc69cfe0800000000000000
+      internalID: -1168283068394085455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Geometric Chairs_gdc1_0: 3022264244618255427
+      Geometric Chairs_gdc1_1: 4921768934189186091
+      Geometric Chairs_gdc1_2: 7129821035628097985
+      Geometric Chairs_gdc1_3: -5146930441126715953
+      Geometric Chairs_gdc1_4: 924379025252616661
+      Geometric Chairs_gdc1_5: 7858632946613405022
+      Geometric Chairs_gdc1_6: 1025830882843486387
+      Geometric Chairs_gdc1_7: -1409072058377186794
+      Geometric Chairs_gdc1_8: 1154166677905812791
+      Geometric Chairs_gdc1_9: -1168283068394085455
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
