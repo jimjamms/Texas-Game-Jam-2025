@@ -1,55 +1,43 @@
 fileFormatVersion: 2
-guid: a8079ec889a2a3c48ad47789a3ec4324
+guid: 5e92e4381a92d5649bd2246f7decdb7b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8922328891513336043
-    second: npc_0
+      213: 1769429448931828106
+    second: Battle Backgrounds_0
   - first:
-      213: 5527661196443274707
-    second: npc_1
+      213: -4732131389061371210
+    second: Battle Backgrounds_1
   - first:
-      213: -2495014906627460004
-    second: npc_2
+      213: -4277343822309770070
+    second: Battle Backgrounds_2
   - first:
-      213: 5610367206947713552
-    second: npc_3
+      213: -657182110463708883
+    second: Battle Backgrounds_3
   - first:
-      213: 2230936588577103941
-    second: npc_4
+      213: -1827526445838835693
+    second: Battle Backgrounds_4
   - first:
-      213: -9111473675286820144
-    second: npc_5
+      213: 4422032505096542742
+    second: Battle Backgrounds_5
   - first:
-      213: -5627484699997550656
-    second: npc_6
+      213: 2754896833546307751
+    second: Battle Backgrounds_6
   - first:
-      213: -5051899674784280284
-    second: npc_7
+      213: 1106511937541109406
+    second: Battle Backgrounds_7
   - first:
-      213: 307091595780809877
-    second: npc_8
+      213: 5627729976014493891
+    second: Battle Backgrounds_8
   - first:
-      213: -2126968859773451732
-    second: npc_9
+      213: 560493919683478708
+    second: Battle Backgrounds_9
   - first:
-      213: -5535047699543943917
-    second: npc_10
+      213: 4463900163318786688
+    second: Battle Backgrounds_10
   - first:
-      213: -4526993761146232485
-    second: npc_11
-  - first:
-      213: 4614894318121576524
-    second: npc_12
-  - first:
-      213: 7369579285134121275
-    second: npc_13
-  - first:
-      213: -1211714280344312584
-    second: npc_14
-  - first:
-      213: 6842672397523141539
-    second: npc_15
+      213: 5237200589228584036
+    second: Battle Backgrounds_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,14 +101,14 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -158,353 +146,265 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: npc_0
+      name: Battle Backgrounds_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 99
-        width: 17
-        height: 24
+        y: 438.75
+        width: 258.33334
+        height: 146.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 51f842c45258d2480800000000000000
-      internalID: -8922328891513336043
+      spriteID: a8162be75b64e8810800000000000000
+      internalID: 1769429448931828106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_1
+      name: Battle Backgrounds_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 99
-        width: 17
-        height: 23
+        x: 258
+        y: 438.75
+        width: 258.33334
+        height: 146.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3dd46b4429236bc40800000000000000
-      internalID: 5527661196443274707
+      spriteID: 6ba6584d297145eb0800000000000000
+      internalID: -4732131389061371210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_2
+      name: Battle Backgrounds_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 99
-        width: 17
-        height: 24
+        x: 516
+        y: 438.75
+        width: 258.33334
+        height: 146.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c547a2d592def5dd0800000000000000
-      internalID: -2495014906627460004
+      spriteID: aacb309b472d3a4c0800000000000000
+      internalID: -4277343822309770070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 99
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0127e9def370cdd40800000000000000
-      internalID: 5610367206947713552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: npc_4
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 67
-        width: 15
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5406f8ed101e5fe10800000000000000
-      internalID: 2230936588577103941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: npc_5
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 67
-        width: 15
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0dac43c87fa8d8180800000000000000
-      internalID: -9111473675286820144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: npc_6
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 67
-        width: 15
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0c743b52b7827e1b0800000000000000
-      internalID: -5627484699997550656
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: npc_7
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 67
-        width: 15
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 421529b030c04e9b0800000000000000
-      internalID: -5051899674784280284
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: npc_8
+      name: Battle Backgrounds_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 35
-        width: 16
-        height: 25
+        y: 292.75
+        width: 258.33334
+        height: 146.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 594e508ed22034400800000000000000
-      internalID: 307091595780809877
+      spriteID: d21b1193a5831e6f0800000000000000
+      internalID: -657182110463708883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_9
+      name: Battle Backgrounds_4
       rect:
         serializedVersion: 2
-        x: 15
-        y: 35
-        width: 17
-        height: 24
+        x: 258
+        y: 292.75
+        width: 258.33334
+        height: 146.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c22c2e8571d7b72e0800000000000000
-      internalID: -2126968859773451732
+      spriteID: 310e422516253a6e0800000000000000
+      internalID: -1827526445838835693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_10
+      name: Battle Backgrounds_5
       rect:
         serializedVersion: 2
-        x: 31
-        y: 35
-        width: 17
-        height: 25
+        x: 520
+        y: 295
+        width: 251
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 31517d5717f8f23b0800000000000000
-      internalID: -5535047699543943917
+      spriteID: 61a928b62273e5d30800000000000000
+      internalID: 4422032505096542742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_11
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 35
-        width: 17
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b512876c823ec21c0800000000000000
-      internalID: -4526993761146232485
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: npc_12
+      name: Battle Backgrounds_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 3
-        width: 15
-        height: 24
+        y: 146.75
+        width: 258.33334
+        height: 146.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c48ea9b7ee56b0040800000000000000
-      internalID: 4614894318121576524
+      spriteID: 7a84064f21c5b3620800000000000000
+      internalID: 2754896833546307751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_13
+      name: Battle Backgrounds_7
       rect:
         serializedVersion: 2
-        x: 16
-        y: 3
-        width: 15
-        height: 23
+        x: 258
+        y: 146.75
+        width: 258.33334
+        height: 146.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b391f7a6051064660800000000000000
-      internalID: 7369579285134121275
+      spriteID: e96fdd0aebe1b5f00800000000000000
+      internalID: 1106511937541109406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_14
+      name: Battle Backgrounds_8
       rect:
         serializedVersion: 2
-        x: 32
-        y: 3
-        width: 15
-        height: 24
+        x: 516
+        y: 146.75
+        width: 258.33334
+        height: 146.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8f42fce28402f2fe0800000000000000
-      internalID: -1211714280344312584
+      spriteID: 3c85920a896b91e40800000000000000
+      internalID: 5627729976014493891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_15
+      name: Battle Backgrounds_9
       rect:
         serializedVersion: 2
-        x: 48
-        y: 3
-        width: 15
-        height: 23
+        x: 0
+        y: 0.75
+        width: 258.33334
+        height: 146.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3a3ccb0aa4e06fe50800000000000000
-      internalID: 6842672397523141539
+      spriteID: 4b40085104647c700800000000000000
+      internalID: 560493919683478708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battle Backgrounds_10
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 0.75
+        width: 258.33334
+        height: 146.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08aac6b3c85f2fd30800000000000000
+      internalID: 4463900163318786688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battle Backgrounds_11
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 0.75
+        width: 258.33334
+        height: 146.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46caf6220364ea840800000000000000
+      internalID: 5237200589228584036
       vertices: []
       indices: 
       edges: []
@@ -513,7 +413,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -523,22 +423,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      npc_0: -8922328891513336043
-      npc_1: 5527661196443274707
-      npc_10: -5535047699543943917
-      npc_11: -4526993761146232485
-      npc_12: 4614894318121576524
-      npc_13: 7369579285134121275
-      npc_14: -1211714280344312584
-      npc_15: 6842672397523141539
-      npc_2: -2495014906627460004
-      npc_3: 5610367206947713552
-      npc_4: 2230936588577103941
-      npc_5: -9111473675286820144
-      npc_6: -5627484699997550656
-      npc_7: -5051899674784280284
-      npc_8: 307091595780809877
-      npc_9: -2126968859773451732
+      Battle Backgrounds_0: 1769429448931828106
+      Battle Backgrounds_1: -4732131389061371210
+      Battle Backgrounds_10: 4463900163318786688
+      Battle Backgrounds_11: 5237200589228584036
+      Battle Backgrounds_2: -4277343822309770070
+      Battle Backgrounds_3: -657182110463708883
+      Battle Backgrounds_4: -1827526445838835693
+      Battle Backgrounds_5: 4422032505096542742
+      Battle Backgrounds_6: 2754896833546307751
+      Battle Backgrounds_7: 1106511937541109406
+      Battle Backgrounds_8: 5627729976014493891
+      Battle Backgrounds_9: 560493919683478708
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
