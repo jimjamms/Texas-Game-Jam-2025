@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -86,19 +84,8 @@ public class PlayerController : MonoBehaviour
         return true;
     }
 
-    // private void OnMoveOver()
-    // {
-    //     var colliders = Physics2D.OverlapCircleAll(transform.position, 0.2f, GameLayers.i.TriggerableLayers);
-    //     foreach (var collider in colliders)
-    //     {
-    //         var triggerable = collider.GetComponent<IPlayerTriggerable>();
-    //         collider.GetComponent<IPlayerTriggerable>();
-    //         if (triggerable != null)
-    //         {
-    //             animator.SetBool("isMoving", false);
-    //             triggerable.OnPlayerTriggered(this);
-    //             break;
-    //         }
-    //     }
-    // }
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        SceneManager.LoadSceneAsync(1);
+    }
 }
