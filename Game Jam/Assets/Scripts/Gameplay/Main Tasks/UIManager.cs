@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour, Interactable
 {
@@ -95,12 +96,6 @@ public class UIManager : MonoBehaviour, Interactable
             button.GetComponent<Image>().color = inactiveColor;
     }
 
-    public void HandleUpdate()
-    {
-        if (Input.GetKeyDown(KeyCode.Z))
-            CloseUI();
-    }
-
     private void CloseUI()
     {
         ui.SetActive(false);
@@ -161,6 +156,8 @@ public class UIManager : MonoBehaviour, Interactable
         else
         {
             CloseUI();
+            if (PopUpController.timeLeft == 0)
+                SceneManager.LoadSceneAsync(4);
         }
     }
 

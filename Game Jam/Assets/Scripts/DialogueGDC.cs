@@ -4,17 +4,15 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Dialogue : MonoBehaviour
+public class DialogueGDC : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
+    [SerializeField] GameObject dialogueBox;
     public string[] lines;
     public float textSpeed;
     private int index;
-
-    public static bool dialogueDone;
     void Start()
     {
-        dialogueDone = false;
         textComponent.text = string.Empty;
         StartDialogue();
     }
@@ -58,7 +56,6 @@ public class Dialogue : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
-            SceneManager.LoadSceneAsync(2);
         }
     }
 }

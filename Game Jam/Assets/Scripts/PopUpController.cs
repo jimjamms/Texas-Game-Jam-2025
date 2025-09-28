@@ -15,6 +15,7 @@ public class PopUpController : MonoBehaviour
     [SerializeField] GameObject bugUI;
     [SerializeField] GameObject musicUI;
     [SerializeField] GameObject artUI;
+    [SerializeField] GameObject dialogueUI;
 
     // pop up
     [SerializeField] GameObject popupUI;
@@ -55,15 +56,24 @@ public class PopUpController : MonoBehaviour
         popupUI.SetActive(true);
 
     }
+    [SerializeField] public static bool dialogueDone;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        if (dialogueDone == false)
+        {
+            dialogueUI.SetActive(true);
+        }
     }
 
     // Update is called once per frame
     public void Update()
     {
+        if (dialogueUI.activeSelf == false)
+        {
+            dialogueDone = true;
+        }
         hourText.text = "" + timeLeft;
         showUI();
         // popup
@@ -77,12 +87,24 @@ public class PopUpController : MonoBehaviour
             {
                 choice = "";
                 counter = 0;
-                if (popupUI.activeSelf == false && bugUI.activeSelf == false && musicUI.activeSelf == false && artUI.activeSelf == false)
+                if (popupUI.activeSelf == false && bugUI.activeSelf == false && musicUI.activeSelf == false && artUI.activeSelf == false && dialogueUI.activeSelf == false)
                 {
                     popupUI.GetComponent<RectTransform>().anchoredPosition = new Vector2(Random.Range(-200, 200), Random.Range(-100, 100));
                     randomIndex = Random.Range(0, tasks.Count);
                     Debug.Log(randomIndex);
-                    textUI.text = tasks[randomIndex];
+                    if (tasks[randomIndex] == "bugs")
+                    {
+                        textUI.text = "Uh oh! The code doesn't seem to be working!\nLet's help Jenny debug!";
+                    }
+                    if (tasks[randomIndex] == "music")
+                    {
+                        textUI.text = "While Tiffany's transcribing, help her remember the melody!";
+                    }
+                    if (tasks[randomIndex] == "art")
+                    {
+                        textUI.text = "Jenna needs sprites! Help her draw some!";
+                    }
+                    //textUI.text = tasks[randomIndex];
                     popupUI.SetActive(true);
                 }
             }

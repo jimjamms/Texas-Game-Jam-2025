@@ -5,6 +5,7 @@ public class BetweenScenes : MonoBehaviour
 {
     [SerializeField] public string choice;
     [SerializeField] public int timeLeft;
+    [SerializeField] public bool dialogueDone;
 
     // hour text
     public TMP_Text hourText;
@@ -19,7 +20,8 @@ public class BetweenScenes : MonoBehaviour
     {
         choice = PopUpController.choice;
         timeLeft = PopUpController.timeLeft;
+        dialogueDone = PopUpController.dialogueDone;
         hourText.text = "" + timeLeft;
-        Debug.Log(timeLeft);
+        Debug.Log(dialogueDone);
     }
 }

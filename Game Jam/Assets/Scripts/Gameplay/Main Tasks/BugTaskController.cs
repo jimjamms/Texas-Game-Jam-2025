@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections;
 using Random = UnityEngine.Random;
+using UnityEngine.SceneManagement;
 public class BugTaskController : MonoBehaviour, Interactable
 {
     [SerializeField] PopUpController popUpController;
@@ -83,6 +84,9 @@ public class BugTaskController : MonoBehaviour, Interactable
         {
             ui.SetActive(false);
             OnCloseUI?.Invoke();
+
+            if (PopUpController.timeLeft == 0)
+                SceneManager.LoadSceneAsync(4);
         }
     }
 }
