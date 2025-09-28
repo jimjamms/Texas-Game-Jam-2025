@@ -17,15 +17,13 @@ public class PetCat : MonoBehaviour
 
     void Start()
     {
-       scoreText.text = score.ToString() + "PETS!";
+       scoreText.text = score.ToString() + " PETS!";
     }
 
     void OnMouseDown()
     {
         score++;
-        Debug.Log("score: " + score);
-       
-
+        scoreText.text = score.ToString() + " PETS!";
     }
 
 }

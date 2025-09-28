@@ -22,6 +22,11 @@ public class PetTheCat
         return EventSystem.current.IsPointerOverGameObject();
     }
 
+    public int getScore()
+    {
+        return score;
+    }
+
 }
 
 // what do i want this code to do?

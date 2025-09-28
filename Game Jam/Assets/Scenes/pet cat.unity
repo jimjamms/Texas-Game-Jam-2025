@@ -132,6 +132,8 @@ GameObject:
   - component: {fileID: 73706164}
   - component: {fileID: 73706165}
   - component: {fileID: 73706166}
+  - component: {fileID: 73706167}
+  - component: {fileID: 73706168}
   m_Layer: 0
   m_Name: Layer 3_sprite_1_0
   m_TagString: Untagged
@@ -302,6 +304,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &73706167
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73706161}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 40996af8f14414c9780eea8da99bb957, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &73706168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73706161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 752b6b53317aa4384a4a29269b7edd99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PetCat
+  scoreText: {fileID: 409989931}
+  score: 0
+  catSprite: {fileID: 73706161}
+  catBG: {fileID: 1289523833}
+  timer: {fileID: 0}
 --- !u!1 &409989929
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,9 +375,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 513647131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 227, y: 123}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -181, y: -159}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &409989931
@@ -359,7 +400,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10 PETS!
+  m_text: PET ME!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -559,7 +600,7 @@ MonoBehaviour:
   CatBG: {fileID: 1289523833}
   scoreText: {fileID: 409989931}
   remainingTime: 15
-  catStatus: 0
+  score: 0
 --- !u!1 &1289523833
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,7 +862,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 235, y: -158}
+  m_AnchoredPosition: {x: 278, y: -159}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1530824759
