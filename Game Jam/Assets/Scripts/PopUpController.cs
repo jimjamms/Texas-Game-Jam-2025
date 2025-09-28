@@ -13,6 +13,7 @@ public class PopUpController : MonoBehaviour
 
     // checks other UIs aren't opened
     [SerializeField] GameObject bugUI;
+    [SerializeField] GameObject musicUI;
 
     // pop up
     [SerializeField] GameObject popupUI;
@@ -72,7 +73,7 @@ public class PopUpController : MonoBehaviour
             {
                 choice = "";
                 counter = 0;
-                if (popupUI.activeSelf == false && bugUI.activeSelf == false)
+                if (popupUI.activeSelf == false && bugUI.activeSelf == false && musicUI.activeSelf == false)
                 {
                     popupUI.GetComponent<RectTransform>().anchoredPosition = new Vector2(Random.Range(-200, 200), Random.Range(-100, 100));
                     randomIndex = Random.Range(0, tasks.Count);
