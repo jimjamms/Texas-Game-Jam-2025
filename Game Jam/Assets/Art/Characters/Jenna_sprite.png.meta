@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2db1bcd69c3212344a480080742686ad
+guid: a87c3c9a3b0288546af7c598a933e1ee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1085829297833451084
-    second: Stairs_gdc_1_0
+      213: -878951413544388391
+    second: Jenna_sprite_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,29 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stairs_gdc_1_0
+      name: Jenna_sprite_0
       rect:
         serializedVersion: 2
-        x: 1403
-        y: 314
-        width: 323
-        height: 377
+        x: 6
+        y: 0
+        width: 54
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 161.5, y: 188.5}
-        - {x: -161.5, y: 188.5}
-        - {x: -161.5, y: 19.5}
-        - {x: -32.5, y: 19.5}
-        - {x: -31.5, y: -188.5}
-        - {x: 161.5, y: -188.5}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: c4e13105ef3a11f00800000000000000
-      internalID: 1085829297833451084
+      spriteID: 9d8fbd4a8565dc3f0800000000000000
+      internalID: -878951413544388391
       vertices: []
       indices: 
       edges: []
@@ -144,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a8f870397eeee6d4abb4d1096a852c2e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -154,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Stairs_gdc_1_0: 1085829297833451084
+      Jenna_sprite_0: -878951413544388391
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

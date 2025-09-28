@@ -17,6 +17,7 @@ public class PopUpController : MonoBehaviour
 
     // pop up
     [SerializeField] GameObject popupUI;
+    [SerializeField] TMP_Text textUI;
 
     // hour text
     public TMP_Text hourText;
@@ -27,7 +28,7 @@ public class PopUpController : MonoBehaviour
 
     // timer
     public float counter = 0;
-    private float timeToAct = 5f;
+    private float timeToAct = 15f;
     enum CountingMethod
     {
         Frames,
@@ -77,6 +78,7 @@ public class PopUpController : MonoBehaviour
                 {
                     popupUI.GetComponent<RectTransform>().anchoredPosition = new Vector2(Random.Range(-200, 200), Random.Range(-100, 100));
                     randomIndex = Random.Range(0, tasks.Count);
+                    textUI.text = tasks[randomIndex];
                     popupUI.SetActive(true);
                 }
             }

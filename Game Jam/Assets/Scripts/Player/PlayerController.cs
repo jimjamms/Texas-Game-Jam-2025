@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class PlayerController : MonoBehaviour
 {
@@ -77,10 +79,26 @@ public class PlayerController : MonoBehaviour
 
     private bool IsWalkable(Vector3 targetPos)
     {
-        if (Physics2D.OverlapCircle(targetPos, 0.3f, solidObjectsLayer | interactableLayer) != null)
+        if (Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer | interactableLayer) != null)
         {
             return false;
         }
         return true;
     }
+
+    // private void OnMoveOver()
+    // {
+    //     var colliders = Physics2D.OverlapCircleAll(transform.position, 0.2f, GameLayers.i.TriggerableLayers);
+    //     foreach (var collider in colliders)
+    //     {
+    //         var triggerable = collider.GetComponent<IPlayerTriggerable>();
+    //         collider.GetComponent<IPlayerTriggerable>();
+    //         if (triggerable != null)
+    //         {
+    //             animator.SetBool("isMoving", false);
+    //             triggerable.OnPlayerTriggered(this);
+    //             break;
+    //         }
+    //     }
+    // }
 }

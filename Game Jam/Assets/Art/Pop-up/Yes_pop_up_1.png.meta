@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2db1bcd69c3212344a480080742686ad
+guid: 94b2dd2fae645b64faadf2ee5d69199b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1085829297833451084
-    second: Stairs_gdc_1_0
+      213: -2194188479234891904
+    second: Yes_pop_up_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,29 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stairs_gdc_1_0
+      name: Yes_pop_up_1_0
       rect:
         serializedVersion: 2
-        x: 1403
-        y: 314
-        width: 323
-        height: 377
+        x: 267
+        y: 104
+        width: 193
+        height: 70
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 161.5, y: 188.5}
-        - {x: -161.5, y: 188.5}
-        - {x: -161.5, y: 19.5}
-        - {x: -32.5, y: 19.5}
-        - {x: -31.5, y: -188.5}
-        - {x: 161.5, y: -188.5}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: c4e13105ef3a11f00800000000000000
-      internalID: 1085829297833451084
+      spriteID: 08f13f4143dac81e0800000000000000
+      internalID: -2194188479234891904
       vertices: []
       indices: 
       edges: []
@@ -144,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a8f870397eeee6d4abb4d1096a852c2e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -154,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Stairs_gdc_1_0: 1085829297833451084
+      Yes_pop_up_1_0: -2194188479234891904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
