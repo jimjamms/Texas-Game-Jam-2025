@@ -121,7 +121,7 @@ public class PopUpController : MonoBehaviour
     public void accept()
     {
         counter = 0;
-        timeLeft -= 5;
+        timeLeft -= 4;
         choice = tasks[randomIndex];
         hourText.text = "" + timeLeft;
         popupUI.SetActive(false);
