@@ -4,6 +4,7 @@ using System.Collections;
 using TMPro;
 using Random = UnityEngine.Random;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 public class PopUpController : MonoBehaviour
 {
@@ -43,7 +44,7 @@ public class PopUpController : MonoBehaviour
     void Awake()
     {
         //hourText.text = "" + timeLeft;
-        tasks = new List<string> { "bugs", "music", "art" };
+        tasks = new List<string> { "bugs", "music", "art", "grass", "sleep" };
         Instance = this;
         //hourText.text = "" + timeLeft;
     }
@@ -74,7 +75,7 @@ public class PopUpController : MonoBehaviour
         {
             dialogueDone = true;
         }
-        hourText.text = "" + timeLeft;
+        hourText.text = "Hours Left:" + timeLeft;
         showUI();
         // popup
         if (countingMethod == CountingMethod.Frames)
@@ -104,6 +105,10 @@ public class PopUpController : MonoBehaviour
                     {
                         textUI.text = "Jenna needs sprites! Help her draw some!";
                     }
+                    if (tasks[randomIndex] == "grass")
+                    {
+                        textUI.text = "Go touch some grass...";
+                    }
                     //textUI.text = tasks[randomIndex];
                     popupUI.SetActive(true);
                 }
@@ -123,7 +128,7 @@ public class PopUpController : MonoBehaviour
         counter = 0;
         timeLeft -= 4;
         choice = tasks[randomIndex];
-        hourText.text = "" + timeLeft;
+        hourText.text = "Hours Left:" + timeLeft;
         popupUI.SetActive(false);
         OnCloseUI?.Invoke();
     }

@@ -10,11 +10,8 @@ public class Dialogue : MonoBehaviour
     public string[] lines;
     public float textSpeed;
     private int index;
-
-    public static bool dialogueDone;
     void Start()
     {
-        dialogueDone = false;
         textComponent.text = string.Empty;
         StartDialogue();
     }

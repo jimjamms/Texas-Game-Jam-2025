@@ -21,7 +21,7 @@ public class BetweenScenes : MonoBehaviour
         choice = PopUpController.choice;
         timeLeft = PopUpController.timeLeft;
         dialogueDone = PopUpController.dialogueDone;
-        hourText.text = "" + timeLeft;
+        hourText.text = "Hours Left:" + timeLeft;
         Debug.Log(dialogueDone);
     }
 }

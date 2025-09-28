@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -84,11 +85,20 @@ public class PlayerController : MonoBehaviour
         return true;
     }
 
+    public TextMeshProUGUI textComponent;
+    [SerializeField] DialogueGDC dialogueGDC;
+    [SerializeField] GameObject dialogueUI;
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.name == "BackToGDC")
             SceneManager.LoadSceneAsync(2);
         else if (collider.gameObject.name == "Outside")
             SceneManager.LoadSceneAsync(3);
+        else if ((collider.gameObject.name == "TouchingGrassRight" || collider.gameObject.name == "TouchingGrassLeft") && PopUpController.choice == "grass")
+        {
+            PopUpController.choice = "";
+            dialogueUI.SetActive(true);
+        }
     }
 }
