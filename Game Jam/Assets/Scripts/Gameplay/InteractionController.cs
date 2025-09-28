@@ -4,6 +4,6 @@ public class InteractionController : MonoBehaviour, Interactable
 {
     public void Interact()
     {
-        StartCoroutine(UIManager.Instance.showUI());
+        StartCoroutine(SleepManager.Instance.showUI());
     }
 }
