@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
         }
         animator.SetBool("isMoving", isMoving);
 
+        // interactions
         if (Input.GetKeyDown(KeyCode.Z))
         {
             Interact();
