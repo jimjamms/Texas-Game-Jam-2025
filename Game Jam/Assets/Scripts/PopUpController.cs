@@ -22,7 +22,7 @@ public class PopUpController : MonoBehaviour
 
     // hour text
     public TMP_Text hourText;
-    public int timeLeft;
+    public static int timeLeft = 24;
 
     public event Action OnShowUI;
     public event Action OnCloseUI;
@@ -41,10 +41,10 @@ public class PopUpController : MonoBehaviour
     public static PopUpController Instance { get; private set; }
     void Awake()
     {
+        //hourText.text = "" + timeLeft;
         tasks = new List<string> { "bugs", "music", "art" };
         Instance = this;
-        timeLeft = 24;
-        hourText.text = "" + timeLeft;
+        //hourText.text = "" + timeLeft;
     }
 
     public IEnumerator showUI()
@@ -64,6 +64,7 @@ public class PopUpController : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+        hourText.text = "" + timeLeft;
         showUI();
         // popup
         if (countingMethod == CountingMethod.Frames)
@@ -98,7 +99,7 @@ public class PopUpController : MonoBehaviour
     public void accept()
     {
         counter = 0;
-        timeLeft--;
+        timeLeft -= 5;
         choice = tasks[randomIndex];
         hourText.text = "" + timeLeft;
         popupUI.SetActive(false);

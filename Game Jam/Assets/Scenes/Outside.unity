@@ -806,6 +806,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BetweenScenes
   choice: 
+  timeLeft: 0
+  hourText: {fileID: 132087865}
 --- !u!1 &331385034
 GameObject:
   m_ObjectHideFlags: 0
