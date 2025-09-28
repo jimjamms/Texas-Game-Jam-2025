@@ -4,6 +4,7 @@ using UnityEngine.Rendering;
 
 public class draw_tutorial : MonoBehaviour
 {
+    // variables
     public Camera m_camera;
     public GameObject brush;
 
@@ -18,18 +19,11 @@ public class draw_tutorial : MonoBehaviour
     [SerializeField] private GameObject screen;
     [SerializeField] private GameObject brushObject;
 
-    //[SerializeField] private GameObject brushtexture;
-
-    //var enemy : GameObject;
 
 
     [System.Obsolete]
-    public void Update()
+    public void Update() //tracks if mouse has been pressed and painted
     {
-        float mouseX = currentMousePosition.x;
-        float mouseY = currentMousePosition.y;
-        //GameObject[] clones = GameObject.FindGameObjectWithTag("clonetag");
-
         if (Input.GetMouseButtonDown(0) && currentMousePosition != lastPos)
         {
             strokes++;
@@ -37,24 +31,17 @@ public class draw_tutorial : MonoBehaviour
         }
         if (strokes >= 6)
         {
-            //enemy = GameObject.Find("enemy");
-
-            //Debug.Log("reached end!");
             overlay.SetActive(false);
             screen.SetActive(false);
             brushObject.SetActive(false);
-
             DestroyAllClones();
-            //return;
         }
-
     }
-    //public class DestroyClonesByName : MonoBehaviour
-    //{
-        public string BrushSample;
+    
+    public string BrushSample;
 
     [System.Obsolete]
-    public void DestroyAllClones()
+    public void DestroyAllClones() //remove paint stroke clones
         {
             GameObject[] allObjects = FindObjectsOfType<GameObject>();
             foreach (GameObject obj in allObjects)
@@ -65,9 +52,8 @@ public class draw_tutorial : MonoBehaviour
                 }
             }
         }
-    //}
 
-    void OnMouseOver()
+    void OnMouseOver() //draw only when mouse is over the draw screen
     {
         Draw();
     }
@@ -97,10 +83,9 @@ public class draw_tutorial : MonoBehaviour
         }
     }
 
-    void CreateBrush()
+    void CreateBrush() //creates new brush instance/clone
     {
         GameObject brushInstance = Instantiate(brush);
-        //brushInstance.tag = "clonetag";
         currentLineRenderer = brushInstance.GetComponent<LineRenderer>();
 
         Vector2 mousePos = m_camera.ScreenToWorldPoint(Input.mousePosition);
