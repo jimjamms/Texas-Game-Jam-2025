@@ -86,6 +86,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        SceneManager.LoadSceneAsync(1);
+        if (collider.gameObject.name == "BackToGDC")
+            SceneManager.LoadSceneAsync(0);
+        else if (collider.gameObject.name == "Outside")
+            SceneManager.LoadSceneAsync(1);
     }
 }

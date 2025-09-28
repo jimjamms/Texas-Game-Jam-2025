@@ -4,14 +4,12 @@ using System.Collections;
 using TMPro;
 using Random = UnityEngine.Random;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using System.Threading.Tasks;
 
 public class PopUpController : MonoBehaviour
 {
     public List<string> tasks;
     public int randomIndex;
-    public string choice;
+    public static string choice;
 
     // checks other UIs aren't opened
     [SerializeField] GameObject bugUI;

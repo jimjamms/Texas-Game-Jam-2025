@@ -65,7 +65,7 @@ public class UIManager : MonoBehaviour, Interactable
     {
         yield return new WaitForEndOfFrame();
 
-        if (popUpController.choice == "music")
+        if (PopUpController.choice == "music")
         {
             Debug.Log("meow");
             OnShowUI?.Invoke();

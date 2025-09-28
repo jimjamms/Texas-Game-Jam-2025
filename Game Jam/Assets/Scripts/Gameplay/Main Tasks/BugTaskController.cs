@@ -39,7 +39,7 @@ public class BugTaskController : MonoBehaviour, Interactable
     {
         yield return new WaitForEndOfFrame();
 
-        if (popUpController.choice == "bugs")
+        if (PopUpController.choice == "bugs")
         {
             OnShowUI?.Invoke();
             ui.SetActive(true);

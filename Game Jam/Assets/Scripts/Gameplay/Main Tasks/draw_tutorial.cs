@@ -38,7 +38,7 @@ public class draw_tutorial : MonoBehaviour, Interactable
     {
         yield return new WaitForEndOfFrame();
 
-        if (popUpController.choice == "art")
+        if (PopUpController.choice == "art")
         {
             strokes = 0;
             OnShowUI?.Invoke();
