@@ -4,16 +4,19 @@ using System.Collections;
 using TMPro;
 using Random = UnityEngine.Random;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using System.Threading.Tasks;
 
 public class PopUpController : MonoBehaviour
 {
-    public List<String> tasks = new List<String> { "bugs", "music" };
+    public List<string> tasks;
     public int randomIndex;
-    public String choice;
+    public string choice;
 
     // checks other UIs aren't opened
     [SerializeField] GameObject bugUI;
     [SerializeField] GameObject musicUI;
+    [SerializeField] GameObject artUI;
 
     // pop up
     [SerializeField] GameObject popupUI;
@@ -28,7 +31,7 @@ public class PopUpController : MonoBehaviour
 
     // timer
     public float counter = 0;
-    private float timeToAct = 15f;
+    private float timeToAct = 5f;
     enum CountingMethod
     {
         Frames,
@@ -40,6 +43,7 @@ public class PopUpController : MonoBehaviour
     public static PopUpController Instance { get; private set; }
     void Awake()
     {
+        tasks = new List<string> { "bugs", "music", "art" };
         Instance = this;
         timeLeft = 24;
         hourText.text = "" + timeLeft;
@@ -74,10 +78,11 @@ public class PopUpController : MonoBehaviour
             {
                 choice = "";
                 counter = 0;
-                if (popupUI.activeSelf == false && bugUI.activeSelf == false && musicUI.activeSelf == false)
+                if (popupUI.activeSelf == false && bugUI.activeSelf == false && musicUI.activeSelf == false && artUI.activeSelf == false)
                 {
                     popupUI.GetComponent<RectTransform>().anchoredPosition = new Vector2(Random.Range(-200, 200), Random.Range(-100, 100));
                     randomIndex = Random.Range(0, tasks.Count);
+                    Debug.Log(randomIndex);
                     textUI.text = tasks[randomIndex];
                     popupUI.SetActive(true);
                 }
