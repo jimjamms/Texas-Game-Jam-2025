@@ -1,7 +1,8 @@
+using Unity.Multiplayer.Center.Common.Analytics;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public enum GameState { FreeRoam, UI }
+public enum GameState { FreeRoam, UI, PopUp }
 public class GameController : MonoBehaviour
 {
     [SerializeField] PlayerController playerController;
@@ -9,14 +10,26 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        UIManager.Instance.OnShowUI += () =>
+        BugTaskController.Instance.OnShowUI += () =>
         {
             state = GameState.UI;
         };
 
-        UIManager.Instance.OnCloseUI += () =>
+        BugTaskController.Instance.OnCloseUI += () =>
         {
             if (state == GameState.UI)
+                state = GameState.FreeRoam;
+        };
+
+        PopUpController.Instance.OnShowUI += () =>
+        {
+            state = GameState.PopUp;
+            Debug.Log("popup!");
+        };
+
+        PopUpController.Instance.OnCloseUI += () =>
+        {
+            if (state == GameState.PopUp)
                 state = GameState.FreeRoam;
         };
     }
@@ -28,7 +41,7 @@ public class GameController : MonoBehaviour
         }
         else if (state == GameState.UI)
         {
-            UIManager.Instance.HandleUpdate();
+            BugTaskController.Instance.HandleUpdate();
         }
     }
 }
