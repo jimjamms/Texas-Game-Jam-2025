@@ -3,8 +3,10 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+public class UIManager : MonoBehaviour, Interactable
 {
+    [SerializeField] PopUpController popUpController;
+
     [Header("Main UI References")]
     [SerializeField] private GameObject ui;
     [SerializeField] private GameObject simonSaysGamePanel;
@@ -14,7 +16,7 @@ public class UIManager : MonoBehaviour
 
     [Header("Game Settings")]
     [SerializeField] private float lightSpeed = 0.5f;
-    [SerializeField] private Color inactiveColor = Color.gray;
+    [SerializeField] private Color inactiveColor = Color.white;
 
     private int[] lightOrder;
     private int level = 0;
@@ -27,6 +29,11 @@ public class UIManager : MonoBehaviour
 
     public event Action OnShowUI;
     public event Action OnCloseUI;
+
+    public void Interact()
+    {
+        StartCoroutine(Instance.showUI());
+    }
 
     public static UIManager Instance { get; private set; }
 
@@ -57,19 +64,24 @@ public class UIManager : MonoBehaviour
     public IEnumerator showUI()
     {
         yield return new WaitForEndOfFrame();
-        OnShowUI?.Invoke();
-        ui.SetActive(true);
-        ResetGame();
 
-        // Generate random sequence
-        lightOrder = new int[4];
-        for (int i = 0; i < lightOrder.Length; i++)
+        if (PopUpController.choice == "music")
         {
-            lightOrder[i] = UnityEngine.Random.Range(0, buttons.Length);
-        }
+            Debug.Log("meow");
+            OnShowUI?.Invoke();
+            ui.SetActive(true);
+            ResetGame();
 
-        level = 1;
-        currentSequence = StartCoroutine(PlaySequence());
+            // Generate random sequence
+            lightOrder = new int[4];
+            for (int i = 0; i < lightOrder.Length; i++)
+            {
+                lightOrder[i] = UnityEngine.Random.Range(0, buttons.Length);
+            }
+
+            level = 1;
+            currentSequence = StartCoroutine(PlaySequence());
+        }
     }
 
     private void ResetGame()
