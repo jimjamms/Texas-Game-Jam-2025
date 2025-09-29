@@ -4,10 +4,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class DialogueGDC : MonoBehaviour
+public class NapDialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
-    [SerializeField] GameObject dialogueBox;
     public string[] lines;
     public float textSpeed;
     private int index;
@@ -31,7 +30,7 @@ public class DialogueGDC : MonoBehaviour
             }
         }
     }
-    public void StartDialogue()
+    void StartDialogue()
     {
         index = 0;
         StartCoroutine(TypeLine());
@@ -56,10 +55,6 @@ public class DialogueGDC : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
-            if (PopUpController.timeLeft == 0)
-            {
-                SceneManager.LoadSceneAsync(4);
-            }
         }
     }
 }

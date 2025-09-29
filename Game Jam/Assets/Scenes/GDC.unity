@@ -1066,6 +1066,7 @@ MonoBehaviour:
   musicUI: {fileID: 911662002}
   artUI: {fileID: 515460410}
   dialogueUI: {fileID: 1454301087}
+  napUI: {fileID: 0}
   popupUI: {fileID: 331385034}
   textUI: {fileID: 1742670962}
   hourText: {fileID: 132087865}

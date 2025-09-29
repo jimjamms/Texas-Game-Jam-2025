@@ -10,6 +10,17 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        // PetCat.Instance.OnShowUI += () =>
+        // {
+        //     state = GameState.Pet;
+        // };
+
+        // PetCat.Instance.OnCloseUI += () =>
+        // {
+        //     if (state == GameState.Pet)
+        //         state = GameState.FreeRoam;
+        // };
+
         BugTaskController.Instance.OnShowUI += () =>
         {
             state = GameState.Bugs;

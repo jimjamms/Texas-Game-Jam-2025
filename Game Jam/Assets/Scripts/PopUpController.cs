@@ -44,7 +44,7 @@ public class PopUpController : MonoBehaviour
     void Awake()
     {
         //hourText.text = "" + timeLeft;
-        tasks = new List<string> { "bugs", "music", "art", "grass", "sleep" };
+        tasks = new List<string> { "bugs", "music", "art", "grass" };
         Instance = this;
         //hourText.text = "" + timeLeft;
     }
